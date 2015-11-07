@@ -1,0 +1,10 @@
+<li ng-repeat="anim in anime">
+	<a href="#/{{ anim.slug }}">
+		<div>
+			<img ng-src="{{ anim.icon }}" width="140">
+			<h1>{{anim.name}}</h1>
+			<p>{{anim.description}}</p>		
+		</div>
+	</a>
+	
+</li>
