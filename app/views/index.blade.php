@@ -13,7 +13,9 @@
 	{{ HTML::script ("js/lib/ui-bootstrap-tpls-0.14.3.min.js") }}
 	{{ HTML::script ("js/app.js") }}
 	{{ HTML::script ("js/services/AnimeService.js") }}
+	{{ HTML::script ("js/services/EpisodeService.js") }}
 	{{ HTML::script ("js/controllers/IndexController.js") }}
 	{{ HTML::script ("js/controllers/AnimeController.js") }}
+	{{ HTML::script ("js/controllers/EpisodeController.js") }}
 </body>
 </html>
