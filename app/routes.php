@@ -24,8 +24,15 @@ Route::group(['prefix' => 'api'], function(){
 		return $data;
 
 	});
+	Route::get('/anime/{anime}/{episode}', function($animeslug, $episodeslug){
+		$anime = Anime::where('slug', $animeslug)->first();
+		$episode = Episode::where('slug', $episodeslug)->where('anime_id', $anime->id)->first();
+		return $episode;
+	});
+
 	Route::get('/anime/{slug}', function($slug){
-		$data = Anime::where('slug', $slug)->first();
+		//$data = Anime::where('slug', $slug)->first();
+		$data = Anime::with('episodes')->where('slug', $slug)->first();
 		return $data;
 	});
 

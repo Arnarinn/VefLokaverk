@@ -10,9 +10,13 @@ app.config(['$routeProvider',
         templateUrl: 'templates/index.html',
         controller: 'IndexController'
       }).
-      when('/:slug',{
+      when('/:anime',{
       	templateUrl: 'templates/anime.html',
       	controller: 'AnimeController'
+      }).
+      when('/:anime/:episode', {
+        templateUrl: 'templates/episode.html',
+        controller: 'EpisodeController'
       }).
       otherwise({
         redirectTo: '/404.html'
