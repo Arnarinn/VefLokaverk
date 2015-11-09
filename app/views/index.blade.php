@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Laravel PHP Framework</title>
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.css">
+	<link rel="stylesheet" type="text/css" href="css/CustomCSS.css">
 	{{ HTML::style ("css/bootstrap.min.css") }}
 </head>
 <body>

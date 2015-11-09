@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'anime',
-			'username'  => 'root',
-			'password'  => '',
+			'host'      => 'tsuts.tskoli.is',
+			'database'  => '1305962319_getanimu',
+			'username'  => '1305962319',
+			'password'  => '123456',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
