@@ -1,13 +1,14 @@
-{{anime.name}}
-<div class="row">
-	<div class="large-6 columns">
-		<li ng-repeat="anim in anime.episodes">
-			<a href="#/{{ anime.slug }}/{{ anim.slug }}">
-				<div>
-					<h1>{{anim.title}}</h1>
-					<p>{{anim.file}}</p>		
-				</div>
-			</a>
-		</li>
-	</div>
+<div class="large-6 large-centered columns">
+	<h1>{{anime.name}}</h1>
+	<h4>Episodes</h4>
+</div>
+<div class="large-6 large-centered columns">
+	<li ng-repeat="anim in anime.episodes">
+		<a href="#/{{ anime.slug }}/{{ anim.episodeNum }}">
+			<div>
+				<h1>{{anim.title}}</h1>	
+				<p>{{anim.slug}}</p>
+			</div>
+		</a>
+	</li>
 </div>
