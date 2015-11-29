@@ -6,3 +6,26 @@ h1{
 	text-align: center;
 	font-family: 'Lobster';
 }
+h4{
+	text-align: center;
+}
+.header{
+	background-color: blue;
+}
+.panel{
+	height: 28em;
+	overflow: hidden;
+}
+a:link{
+		color:black !important;
+}
+p{
+	color: black;
+}
+a:hover{
+	background: gray;
+}
+img{
+	float: left;
+	padding: 10px;
+}

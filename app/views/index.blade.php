@@ -10,12 +10,29 @@
 	{{ HTML::style ("css/bootstrap.min.css") }}
 </head>
 <body>
+	<div class="top-bar">
+	  <div class="top-bar-left">
+	    <ul class="dropdown menu" data-dropdown-menu>
+	      <li class="menu-text">GetAnimu</li>
+	      <li class="has-submenu">
+	        <a href="#/">Home</a>
+	      </li>
+	    </ul>
+	  </div>
+	  <div class="top-bar-right">
+	    <ul class="menu">
+	      <li><input type="search" placeholder="Search"></li>
+	      <li><button type="button" class="button">Search</button></li>
+	    </ul>
+	  </div>
+	</div>
 	<div ng-view></div>
 
 	{{ HTML::script ("js/lib/angular.min.js") }}
+	{{ HTML::script ("js/foundation.min.js") }}
 	{{ HTML::script ("js/lib/angular-route.min.js") }}
 	{{ HTML::script ("js/lib/ui-bootstrap-tpls-0.14.3.min.js") }}
-	{{ HTML::script ("js/app.js") }}
+	{{ HTML::script ("js/myapp.js") }}
 	{{ HTML::script ("js/services/AnimeService.js") }}
 	{{ HTML::script ("js/services/EpisodeService.js") }}
 	{{ HTML::script ("js/controllers/IndexController.js") }}
