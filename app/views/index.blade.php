@@ -5,7 +5,7 @@
 	<title>Laravel PHP Framework</title>
 	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 	<link rel="stylesheet" type="text/css" href="css/foundation.css">
-	<link rel="stylesheet" type="text/css" href="css/CustomCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/CustomCss.css">
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	{{ HTML::style ("css/bootstrap.min.css") }}
 </head>
@@ -32,7 +32,7 @@
 	{{ HTML::script ("js/foundation.min.js") }}
 	{{ HTML::script ("js/lib/angular-route.min.js") }}
 	{{ HTML::script ("js/lib/ui-bootstrap-tpls-0.14.3.min.js") }}
-	{{ HTML::script ("js/myapp.js") }}
+	{{ HTML::script ("js/app.js") }}
 	{{ HTML::script ("js/services/AnimeService.js") }}
 	{{ HTML::script ("js/services/EpisodeService.js") }}
 	{{ HTML::script ("js/controllers/IndexController.js") }}

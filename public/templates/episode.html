@@ -1,9 +1,7 @@
 <div class="large-12 large-centered columns">
 	<h1>GetAnimu</h1>
 </div>
-<div class="large-6 large-centered columns">
-	{{episode.title}}
-	<video ng-src="{{episode.file}}" controls autoplay></video>
+<div class="large-9 large-centered columns">
+	<p>{{episode.episode.file}}</p>
+	<video ng-src="{{episode.anime.slug}}" controls autoplay></video>
 </div>
-
-

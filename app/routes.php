@@ -26,8 +26,8 @@ Route::group(['prefix' => 'api'], function(){
 	});
 	Route::get('/anime/{anime}/{episode}', function($animeslug, $episodeslug){
 		$anime = Anime::where('slug', $animeslug)->first();
-		$episode = Episode::where('slug', $episodeslug)->where('anime_id', $anime->id)->first();
-		return $episode;
+		$episode = Episode::where('episodeNum', $episodeslug)->where('anime_id', $anime->id)->first();
+		return ["episode"=>$episode,"anime"=>$anime];
 	});
 
 	Route::get('/anime/{slug}', function($slug){
